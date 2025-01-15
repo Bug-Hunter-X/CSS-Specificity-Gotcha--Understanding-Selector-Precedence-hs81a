@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon CSS bug related to the specificity of CSS selectors. The `bug.css` file contains CSS code that exhibits unexpected style inheritance due to selector precedence conflicts. The `bugSolution.css` shows how to correctly manage specificity to achieve the desired styling outcome.
