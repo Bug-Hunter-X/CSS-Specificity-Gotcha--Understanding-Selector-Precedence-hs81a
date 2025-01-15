@@ -1,0 +1,22 @@
+To resolve the issue, we need to be mindful of CSS specificity. It is best practice to use IDs sparingly, and to structure your CSS in a more logical and maintainable order. If you need to override a specific style, use a more specific selector with the desired properties. In this case, we can rearrange the order or use more specific selectors.
+
+```css
+/* More specific selectors should generally come before less specific ones */
+#id-name .class-name div {
+  color: purple;
+}
+
+#id-name div {
+  color: green;
+}
+
+.class-name div {
+  color: red;
+}
+
+div {
+  color: blue;
+}
+```
+
+By ordering selectors correctly, we ensure that the cascade effect works as intended.  Alternatively, we can use the `!important` flag, but this is generally discouraged for maintainability reasons.
